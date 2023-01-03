@@ -1,6 +1,6 @@
 {
-  "name": "bitmessage",
-  "version": "0.6.6",
+  "name": "@bitmessage/bitmessage",
+  "version": "0.6.7",
   "description": "JavaScript Bitmessage library",
   "main": "./lib/index.js",
   "browser": {
@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/bitchan/bitmessage.git"
+    "url": "https://git.bitmessage.org/lee.miller/bitmessage-js.git"
   },
   "keywords": [
     "bitmessage",
@@ -29,28 +29,29 @@
   "author": "Kagami Hiiragi",
   "license": "CC0-1.0",
   "bugs": {
-    "url": "https://github.com/bitchan/bitmessage/issues"
+    "url": "https://git.bitmessage.org/lee.miller/bitmessage-js/issues"
   },
-  "homepage": "https://github.com/bitchan/bitmessage",
+  "homepage": "https://git.bitmessage.org/lee.miller/bitmessage-js",
   "devDependencies": {
+    "browserify": "16.5.0",
     "chai": "*",
     "jsdoc": "^3.3.2",
     "jshint": "*",
-    "karma": "^0.12.31",
-    "karma-browserify": "^2.0.0",
-    "karma-chrome-launcher": "^0.1.7",
-    "karma-cli": "~0.0.4",
+    "karma": "6.4.1",
+    "karma-browserify": "8.1.0",
+    "karma-chrome-launcher": "3.1.0",
+    "karma-cli": "2.0.0",
     "karma-env-preprocessor": "^0.1.0",
-    "karma-firefox-launcher": "^0.1.4",
-    "karma-mocha": "^0.1.10",
-    "karma-mocha-reporter": "^0.3.1",
+    "karma-firefox-launcher": "1.2.0",
+    "karma-mocha": "2.0.1",
+    "karma-mocha-reporter": "2.2.5",
     "mocha": "*"
   },
   "dependencies": {
     "bn.js": "^3.0.1",
     "bs58": "^2.0.0",
     "buffer-equal": "~0.0.1",
-    "eccrypto": "^1.0.3",
+    "eccrypto": "git+https://git.bitmessage.org/Bitmessage/eccrypto.git#tests",
     "es6-promise": "^3.0.2",
     "hash.js": "^1.0.2",
     "nan": "^2.1.0",
@@ -59,6 +60,6 @@
     "webworkify": "^1.0.1"
   },
   "optionalDependencies": {
-    "bignum": "^0.11.0"
+    "bignum": "^0.13.1"
   }
 }
