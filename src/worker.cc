@@ -2,7 +2,7 @@
 #include <nan.h>
 #include "./pow.h"
 
-using v8::Handle;
+// using v8::Handle;
 using v8::Local;
 using v8::FunctionTemplate;
 using v8::Function;
@@ -71,8 +71,8 @@ NAN_METHOD(PowAsync) {
     return Nan::ThrowError("Bad input");
   }
 
-  size_t pool_size = info[0]->Uint32Value();
-  uint64_t target = info[1]->IntegerValue();
+  size_t pool_size = (size_t)Nan::To<uint32_t>(info[0]).FromJust();
+  uint64_t target = Nan::To<int64_t>(info[1]).FromJust();
   char* buf = node::Buffer::Data(info[2]);
   size_t length = node::Buffer::Length(info[2]);
   if (pool_size < 1 ||
