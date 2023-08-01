@@ -1,6 +1,6 @@
 {
-  "name": "@bitmessage/bitmessage",
-  "version": "0.6.7",
+  "name": "@mdip/bm",
+  "version": "0.1.0",
   "description": "JavaScript Bitmessage library",
   "main": "./lib/index.js",
   "browser": {
