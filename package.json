@@ -1,6 +1,6 @@
 {
   "name": "@mdip/bm",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "JavaScript Bitmessage library",
   "main": "./lib/index.js",
   "browser": {
@@ -57,7 +57,8 @@
     "nan": "^2.1.0",
     "object-assign": "^2.0.0",
     "sha.js": "^2.3.1",
-    "webworkify": "^1.0.1"
+    "webworkify": "^1.0.1",
+    "webworkify-webpack": "^2.1.5"
   },
   "optionalDependencies": {
     "bignum": "^0.13.1"
